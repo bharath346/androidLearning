@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-           <variable
-               name="useractivity"
-               type="com.example.activitylifecycle.UserActivity" />
-           <variable
-               name="mainactivity"
-               type="com.example.activitylifecycle.MainActivity"/>
+                <variable
+                    name="thirduser"
+                    type="com.example.activitylifecycle.UserActivity" />
+        <variable
+            name="thirdactivity"
+            type="com.example.activitylifecycle.ThirdActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".ThirdActivity">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{useractivity.activityname}"
+            android:text="@{thirduser.activityname}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,8 +32,8 @@
             android:id="@+id/nextMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next"
-            android:onClick="@{() -> mainactivity.buttonClickNext()}"
+            android:text="Button"
+            android:onClick="@{() -> thirdactivity.buttonBackClick()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
